@@ -1,0 +1,39 @@
+# Node.js (Common for both frontend and backend)
+node_modules/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.bak
+*.swo
+
+# Frontend specific
+# Build output directories
+build/
+dist/
+out/
+
+# Other frontend specific files
+.DS_Store # macOS specific
+coverage/ # Test coverage reports
+
+# Backend specific
+# Build output directories (e.g., for Java, Python, Go)
+target/
+bin/
+*.pyc # Python compiled files
+__pycache__/ # Python compiled modules
+*.log # Log files
+
+# Database related files (if not managed by migration scripts)
+*.sqlite
+*.db
+
+# Other backend specific files
+temp/
