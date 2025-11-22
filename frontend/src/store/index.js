@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-import sampleReducer from './sampleSlice'
+import goalReducer from './goalSlice'
 
 export default configureStore({
     reducer: {
-        sample: sampleReducer,
+        goal: goalReducer,
     },
 })

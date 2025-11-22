@@ -10,9 +10,9 @@ const goalsSchema = new mongoose.Schema(
 		assignedBy: {
 			type: mongoose.Schema.Types.ObjectId,
 			ref: "User", // Assuming the assigner is a User (admin or doctor)
-			required: true,
+			// required: true,
 		},
-		Title: {
+		title: {
 			type: String,
 			required: true,
 		},
@@ -21,7 +21,7 @@ const goalsSchema = new mongoose.Schema(
 		},
 		targetDate: {
 			type: Date,
-			required: true,
+			// required: true,
 		},
 		status: {
 			type: Boolean, // True for achieved, False for in-progress

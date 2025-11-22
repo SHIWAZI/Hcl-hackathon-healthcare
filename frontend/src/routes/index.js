@@ -3,7 +3,9 @@ import {
 } from "react-router";
 import Home from "./Home";
 import Goal from "./ServiceProvider/Goal";
-import ServiceProviderLayout from "../Componnets/Layouts/ServiceProviderLayout";
+import ServiceProviderLayout from "../components/Layouts/ServiceProviderLayout";
+import CreateGoal from "./ServiceProvider/CreateGoal";
+import NotFound from "../components/common/NotFound";
 
 let router = createBrowserRouter([
     {
@@ -14,9 +16,18 @@ let router = createBrowserRouter([
         path: "/service-provider",
         Component: ServiceProviderLayout,
         children: [
+
             {
-                path: "/service-provider/:id/goal",
+                path: "/service-provider/goals",
                 Component: Goal,
+            },
+            {
+                path: "/service-provider/goal/create",
+                Component: CreateGoal,
+            },
+            {
+                path: "/service-provider/:page",
+                Component: NotFound,
             },
         ],
     }
