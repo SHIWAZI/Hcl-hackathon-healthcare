@@ -1,10 +1,10 @@
 import React from 'react'
 import { Outlet } from 'react-router'
 
-export default function Home() {
+export default function Goal() {
     return (
-        <div>Home
-            <Outlet />
+        <div>
+
         </div>
     )
 }
